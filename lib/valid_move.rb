@@ -3,13 +3,12 @@ def valid_move?(board, index)
 
   if index.between?(1,9) == false
     return false
+  elsif position_taken?(board, index) == true #yes postion is taken
+  	return false
   else
-    if position_taken?(board, index) == true #yes postion is taken
-  	   return false
-     else
-       return true
-     end
+    return true
   end
+  
 end
 
 def position_taken?(board, index)
