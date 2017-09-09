@@ -14,10 +14,11 @@ end
 def position_taken?(board, index)
 
 	index -= 1
-
-	if board[index] == " " or board[index] == ""
+  
+  if board[index] == " " or board[index] == ""
 		return true
-  	else
-    	return false
+  else
+    return false
 	end
+  
 end
